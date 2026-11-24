@@ -8,5 +8,5 @@
 - `favicon.svg` / `apple-touch-icon.png` … アイコン
 
 ## 公開前にやること
-- ドメインが決まったら、`index.html` に canonical と og:url を入れ、`sitemap.xml` を追加し `robots.txt` に Sitemap 行を足す
+- ドメイン：https://sakaino-bankin.com/
 - お問い合わせフォームの送信先 `/api/contact`（Cloudflare Pages Functions）を用意する

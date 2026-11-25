@@ -127,6 +127,8 @@ nav a{text-decoration:none}
 .hero h1{font-size:clamp(28px,5.2vw,54px);font-weight:900;line-height:1.5;letter-spacing:.06em;text-shadow:0 2px 12px rgba(0,0,0,.35)}
 .hero p.lead{color:#f1f5f7;max-width:46em;font-size:15px;text-shadow:0 1px 6px rgba(0,0,0,.7)}
 .cta{display:flex;flex-wrap:wrap;gap:10px}
+.nosales-hero{font-size:12px;color:rgba(255,255,255,.85);margin-top:-8px;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.htel .nosales{margin-top:2px;font-size:10.5px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:4px;padding:12px 18px;font-weight:700;text-decoration:none;font-size:15px;border:0;cursor:pointer;font-family:var(--body)}
 .btn.tel{background:var(--copper);color:#fff}
 .btn.line{background:var(--line-green);color:#fff}
@@ -276,6 +278,7 @@ footer b{color:#fff;font-family:var(--display);font-size:16px}
   .bar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);border-top:1px solid var(--rule);
     padding-top:8px;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px));padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
   .bar .btn{padding:11px 8px;font-size:14.5px}
+  .bar .barnote{grid-column:1/-1;text-align:center;font-size:10.5px;color:var(--sub);line-height:1.2;margin-top:-2px}
 }
 @media (prefers-reduced-motion:no-preference){.btn{transition:filter .15s}.btn:hover{filter:brightness(1.08)}}
 </style>
@@ -290,7 +293,7 @@ footer b{color:#fff;font-family:var(--display);font-size:16px}
       <span><b>境野建築板金</b><small>SAKAINO KENCHIKU BANKIN</small></span>
     </a>
     <nav aria-label="ページ内メニュー"><a href="#service">工事内容</a><a href="#works">施工事例</a><a href="#owner">代表紹介</a><a href="#flow">ご依頼の流れ</a><a href="#contact">お問い合わせ</a></nav>
-    <div class="htel"><small>お電話でのご相談</small><strong><a href="tel:09054171873" style="text-decoration:none">090-5417-1873</a></strong></div>
+    <div class="htel"><small>お電話でのご相談</small><strong><a href="tel:09054171873" style="text-decoration:none">090-5417-1873</a></strong><small class="nosales">※営業のお電話はご遠慮ください</small></div>
   </div>
 </header>
 
@@ -306,6 +309,7 @@ footer b{color:#fff;font-family:var(--display);font-size:16px}
       <a class="btn tel" href="tel:09054171873">📞 090-5417-1873</a>
       <a class="btn line" href="https://lin.ee/Sc3vAbv" target="_blank" rel="noopener">LINEで相談する</a>
     </div>
+    <p class="nosales-hero">※営業・勧誘のお電話はご遠慮ください。</p>
     <div class="areaband"><b>対応地域</b>下田市・南伊豆町・河津町・東伊豆町・松崎町・西伊豆町<small>ほか伊豆半島全域・伊豆諸島（新島・式根島・利島・神津島）もご相談ください</small></div>
   </div>
 </div>
@@ -472,7 +476,7 @@ footer b{color:#fff;font-family:var(--display);font-size:16px}
   </div>
 </footer>
 
-<div class="bar"><a class="btn tel" href="tel:09054171873">📞 電話する</a><a class="btn line" href="https://lin.ee/Sc3vAbv" target="_blank" rel="noopener">LINEで相談</a></div>
+<div class="bar"><a class="btn tel" href="tel:09054171873">📞 電話する</a><a class="btn line" href="https://lin.ee/Sc3vAbv" target="_blank" rel="noopener">LINEで相談</a><small class="barnote">※営業・勧誘のお電話はご遠慮ください</small></div>
 
 <script>
 const f=document.getElementById('f'),fo=document.getElementById('fo');
